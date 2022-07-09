@@ -1,0 +1,50 @@
+@import "../abstracts/_variables.scss";
+@import "../components/_buttons.scss";
+
+*{
+   &::after
+   &::before{
+       padding: 0px;
+       margin: 0px;
+   }
+   box-sizing: border-box;
+   scrollbar-color: transparent transparent;
+   scrollbar-width: 0px;
+}
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    size: auto;
+}
+ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* IDS (#) */
+#logo {
+    margin-top: 2px;
+    margin-left: 10px;
+}
+#backBG {
+    background-size: contain;
+    background-position: center;
+    height: calc(100vh - 124px);
+    background-repeat: no-repeat;
+    background-image: url(../img/backBG.png);
+}
+/* Class(containers) (.) */
+.banner{
+    background-image: url(../img/backgroundHeader.png);
+    background-color: #008c1e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

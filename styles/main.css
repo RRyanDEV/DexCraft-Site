@@ -1,0 +1,121 @@
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 3rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  position: relative;
+  padding: 7px 7px;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 30;
+  color: #FFFFFF;
+  border: 1px solid black;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0rem 0.5rem;
+  border-radius: 9px;
+}
+
+.button::before {
+  content: "";
+  width: 100%;
+  height: 100;
+  position: absolute;
+  background: #9D5529;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: -1;
+}
+
+.effect::before {
+  width: 100%;
+  height: 0%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-65deg);
+          transform: translate(-50%, -50%) rotate(-65deg);
+}
+
+.effect:hover::before {
+  height: 375%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: 0px;
+}
+
+*::after *::before {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  size: auto;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* IDS (#) */
+#logo {
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+#backBG {
+  background-size: contain;
+  background-position: center;
+  height: calc(100vh - 124px);
+  background-repeat: no-repeat;
+  background-image: url(../img/backBG.png);
+}
+
+/* Class(containers) (.) */
+.banner {
+  background-image: url(../img/backgroundHeader.png);
+  background-color: #008c1e;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*# sourceMappingURL=main.css.map */
