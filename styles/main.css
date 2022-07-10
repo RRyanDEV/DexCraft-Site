@@ -69,6 +69,8 @@
 *::after *::before {
   padding: 0px;
   margin: 0px;
+  border: 0px;
+  outline: 0px;
 }
 
 body {
